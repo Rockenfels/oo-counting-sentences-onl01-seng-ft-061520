@@ -17,7 +17,7 @@ class String
   def count_sentences
     sentences = self.to_s.split(/[.!?]/)
     return 0 if sentences.length < 1
-    sentences = sentences.reject {|i| 
-    
+    sentences = sentences.reject {|i| i.empty?}
+    sentences.length
   end
 end
