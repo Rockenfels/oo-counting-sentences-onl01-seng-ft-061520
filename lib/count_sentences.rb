@@ -18,6 +18,5 @@ class String
     sentences = self.to_s.split(/[.!?]/)
     return 0 if sentences.length < 1
     sentences.length
-    binding.pry
   end
 end
