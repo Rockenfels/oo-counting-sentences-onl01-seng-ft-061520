@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    sentences = self.to_s.split("."||"!"||"?")
+    sentences = self.to_s.split(/[.!?]/)
     return 0 if sentences.length < 1
     sentences.length
     binding.pry
