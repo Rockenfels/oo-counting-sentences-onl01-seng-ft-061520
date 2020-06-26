@@ -18,5 +18,6 @@ class String
     sentences = self.to_s.split(/[.!?]/)
     return 0 if sentences.length < 1
     sentences.flatten.length
+    
   end
 end
